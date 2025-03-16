@@ -11,20 +11,20 @@ import org.springframework.stereotype.Component;
 public class StudentManager implements IMetier{
     @Autowired
     @Qualifier("dao")
-    Idao studentDATA;
+    Idao studentDAO;
 
-    public void setStudentDAO(StudentDAO studentDATA){
-        this.studentDATA = studentDATA;
+    public void setStudentDAO(StudentDAO studentDAO){
+        this.studentDAO = studentDAO;
     }
 @Override
     public Student addstudent(Student student){
-        for (Student s : studentDATA.getallstudents()){
+        for (Student s : studentDAO.getallstudents()){
             if (s.getEmail().equals(student.getEmail())){
                 System.out.println(student.getEmail() + " already exists");
                 return null;
             }
         }
 
-            return studentDATA.addstudent(student);
+            return studentDAO.addstudent(student);
     }
 }
