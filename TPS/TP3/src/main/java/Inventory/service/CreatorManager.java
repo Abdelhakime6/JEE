@@ -1,4 +1,4 @@
-package Inventory.dao.service;
+package Inventory.service;
 
 import Inventory.dao.entities.Creator;
 import Inventory.dao.repositories.Creatorrepository;

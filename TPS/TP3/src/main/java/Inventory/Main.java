@@ -1,9 +1,9 @@
-package Inventory.dao;
+package Inventory;
 
 import Inventory.dao.entities.Creator;
 import Inventory.dao.entities.Video;
-import Inventory.dao.service.CreatorService;
-import Inventory.dao.service.VideoService;
+import Inventory.service.CreatorService;
+import Inventory.service.VideoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

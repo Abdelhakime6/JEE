@@ -1,4 +1,4 @@
-package Inventory.dao.service;
+package Inventory.service;
 
 import Inventory.dao.entities.Video;
 import Inventory.dao.repositories.videosrepository;
